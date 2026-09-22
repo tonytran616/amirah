@@ -5,7 +5,7 @@ import { useState } from 'react'
 import { Menu, X } from 'lucide-react'
 import { cn } from '@/lib/utils'
 
-const navItems = ['Products', 'Resources', 'Ecosystem', 'About']
+const navItems = ['Product', 'Technology', 'Company', 'Insights']
 
 export function SiteHeader() {
   const [open, setOpen] = useState(false)
@@ -41,10 +41,10 @@ export function SiteHeader() {
 
         <div className="flex items-center gap-3">
           <a
-            href="#"
+            href="#contact"
             className="hidden rounded-full bg-white px-6 py-2.5 text-sm font-semibold text-black transition-colors hover:bg-white/90 md:inline-flex"
           >
-            Launch App
+            Book a demo
           </a>
           <button
             type="button"
@@ -75,10 +75,10 @@ export function SiteHeader() {
             </a>
           ))}
           <a
-            href="#"
+            href="#contact"
             className="mt-2 rounded-full bg-white px-6 py-3 text-center text-sm font-semibold text-black"
           >
-            Launch App
+            Book a demo
           </a>
         </nav>
       </div>
