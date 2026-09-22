@@ -1,12 +1,14 @@
 import { Hero } from '@/components/hero'
 import { Positioning } from '@/components/positioning'
-import { Problem } from '@/components/problem'
+import { Leadership } from '@/components/leadership'
 import { Advantage } from '@/components/advantage'
 import { Performance } from '@/components/performance'
 import { SpecTable } from '@/components/spec-table'
+import { Foundation } from '@/components/foundation'
 import { Includes } from '@/components/includes'
 import { OnboardingTimeline } from '@/components/onboarding-timeline'
-import { ClosingCta } from '@/components/closing-cta'
+import { Partners } from '@/components/partners'
+import { Contact } from '@/components/contact'
 import { SiteFooter } from '@/components/site-footer'
 
 export default function Page() {
@@ -14,13 +16,15 @@ export default function Page() {
     <main className="bg-black text-white">
       <Hero />
       <Positioning />
-      <Problem />
+      <Leadership />
       <Advantage />
       <Performance />
       <SpecTable />
+      <Foundation />
       <Includes />
       <OnboardingTimeline />
-      <ClosingCta />
+      <Partners />
+      <Contact />
       <SiteFooter />
     </main>
   )
