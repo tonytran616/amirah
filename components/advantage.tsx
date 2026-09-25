@@ -32,50 +32,61 @@ export function Advantage() {
     <section className="bg-white text-neutral-900">
       <div className="mx-auto max-w-7xl px-6 py-24 md:px-8 md:py-32">
         <Reveal>
-          <h2 className="text-balance text-3xl font-medium leading-tight tracking-tight md:text-5xl">
-            Amirah&apos;s Unique Advantage
-          </h2>
-          <div className="mt-8 h-px w-full bg-neutral-200" />
+          <div className="mx-auto max-w-3xl text-center">
+            <h2 className="text-balance text-3xl font-semibold leading-tight tracking-tight md:text-5xl">
+              Amirah&apos;s Unique Advantage
+            </h2>
+            <p className="mt-5 text-pretty text-lg leading-relaxed text-neutral-500">
+              Institutional-grade signals built for precision, adaptability, and
+              performance across global markets.
+            </p>
+          </div>
         </Reveal>
 
-        <div className="mt-12 grid gap-px overflow-hidden md:grid-cols-3">
-          <Reveal className="md:col-span-2">
-            <article className="flex h-full flex-col border border-neutral-200 p-8 md:p-10">
-              <h3 className="text-2xl font-medium tracking-tight text-emerald-600 md:text-3xl">
-                &gt;90% Accurate
-              </h3>
-              <p className="mt-2 text-sm font-medium uppercase tracking-wide text-neutral-500">
-                Market Entry and Exit Signals
-              </p>
-              <ul className="mt-8 grid gap-4 sm:grid-cols-2">
-                {accuracyBullets.map((bullet) => (
-                  <li key={bullet} className="flex items-start gap-3">
-                    <Check
-                      className="mt-0.5 size-5 shrink-0 text-emerald-600"
-                      aria-hidden="true"
-                    />
-                    <span className="text-base leading-relaxed text-neutral-600">
-                      {bullet}
-                    </span>
-                  </li>
-                ))}
-              </ul>
-            </article>
-          </Reveal>
-
-          {cards.map((card, i) => (
-            <Reveal key={card.title} delay={i * 60}>
-              <article className="flex h-full flex-col border border-neutral-200 p-8">
-                <h3 className="text-xl font-medium tracking-tight text-emerald-600">
-                  {card.title}
+        <Reveal delay={80}>
+          <div className="mt-14 rounded-[24px] bg-[#f2f2f2] p-2">
+            <div className="grid gap-2 md:grid-cols-3">
+              <article className="flex h-full flex-col rounded-2xl bg-white p-8 md:col-span-2 md:p-10">
+                <h3 className="text-3xl font-semibold tracking-tight text-neutral-900 md:text-4xl">
+                  &gt;90% Accurate
                 </h3>
-                <p className="mt-3 text-base leading-relaxed text-neutral-600">
-                  {card.body}
+                <p className="mt-2 text-sm font-medium uppercase tracking-[0.12em] text-neutral-400">
+                  Market Entry and Exit Signals
                 </p>
+                <ul className="mt-8 grid gap-4 sm:grid-cols-2">
+                  {accuracyBullets.map((bullet) => (
+                    <li key={bullet} className="flex items-start gap-3">
+                      <span className="mt-0.5 flex size-5 shrink-0 items-center justify-center rounded-full bg-neutral-900 text-white">
+                        <Check
+                          className="size-3"
+                          strokeWidth={3}
+                          aria-hidden="true"
+                        />
+                      </span>
+                      <span className="text-base leading-relaxed text-neutral-600">
+                        {bullet}
+                      </span>
+                    </li>
+                  ))}
+                </ul>
               </article>
-            </Reveal>
-          ))}
-        </div>
+
+              {cards.map((card) => (
+                <article
+                  key={card.title}
+                  className="flex h-full flex-col rounded-2xl bg-white p-8"
+                >
+                  <h3 className="text-xl font-semibold tracking-tight text-neutral-900">
+                    {card.title}
+                  </h3>
+                  <p className="mt-3 text-base leading-relaxed text-neutral-500">
+                    {card.body}
+                  </p>
+                </article>
+              ))}
+            </div>
+          </div>
+        </Reveal>
       </div>
     </section>
   )

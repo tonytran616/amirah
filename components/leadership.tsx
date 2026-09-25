@@ -14,14 +14,13 @@ export function Leadership() {
         </Reveal>
 
         <Reveal delay={80}>
-          {/* Placeholder team photo — replace src with the real 16:9 image. */}
-          <div className="mt-12 overflow-hidden rounded-[24px] bg-white/5">
+          <div className="mx-auto mt-12 max-w-3xl overflow-hidden rounded-[24px] bg-white/5 md:max-w-4xl">
             <img
-              src="/placeholder.svg?height=900&width=1600"
+              src="/leadership.jpg"
               alt="Amirah Financial leadership team"
-              width={1600}
-              height={900}
-              className="aspect-[16/9] w-full object-cover"
+              width={602}
+              height={1306}
+              className="aspect-square w-full object-cover object-[center_70%]"
             />
           </div>
         </Reveal>

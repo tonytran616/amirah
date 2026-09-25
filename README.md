@@ -1,33 +1,49 @@
-# amirah
+# Amirah Financial
 
-This is a [Next.js](https://nextjs.org) project bootstrapped with [v0](https://v0.app).
+Marketing site for Amirah Financial — institutional-grade fintech software for predictive markets.
 
-## Built with v0
+Built with [Next.js](https://nextjs.org) and originally bootstrapped from [v0](https://v0.app).
 
-This repository is linked to a [v0](https://v0.app) project. You can continue developing by visiting the link below -- start new chats to make changes, and v0 will push commits directly to this repo. Every merge to `main` will automatically deploy.
+## Live site
 
-[Continue working on v0 →](https://v0.app/chat/projects/prj_DeVyQEAnLig6HebPHnYO9WIRpxyC)
+GitHub Pages: [https://fluffy9.github.io/amirah/](https://fluffy9.github.io/amirah/)
 
-## Getting Started
-
-First, run the development server:
+## Getting started
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
+pnpm install
 pnpm dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000).
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Scripts
 
-## Learn More
+| Command       | Description                                      |
+| ------------- | ------------------------------------------------ |
+| `pnpm dev`    | Local development server                         |
+| `pnpm build`  | Production static export to `out/`                |
+| `pnpm start`  | Not used for static export — serve `out/` instead |
 
-To learn more, take a look at the following resources:
+## Content
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-- [v0 Documentation](https://v0.app/docs) - learn about v0 and how to use it.
+Editable copy for the giving-back section lives in [`data/message.json`](data/message.json).
+
+## GitHub Pages
+
+The site is statically exported (`output: 'export'`) and deployed with GitHub Actions on every push to `main`.
+
+For project Pages under `/amirah`, the build sets `GITHUB_PAGES=true` so Next.js applies the correct `basePath`.
+
+Local preview of the Pages build:
+
+```bash
+GITHUB_PAGES=true pnpm build
+npx serve out
+```
+
+## v0
+
+Continue iterating in v0:
+
+[Continue working on v0 →](https://v0.app/chat/projects/prj_DeVyQEAnLig6HebPHnYO9WIRpxyC)

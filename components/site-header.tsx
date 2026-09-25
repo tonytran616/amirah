@@ -2,16 +2,29 @@
 
 import Image from 'next/image'
 import { useState } from 'react'
-import { Menu, X } from 'lucide-react'
+import { ChevronRight, Menu, X } from 'lucide-react'
 import { cn } from '@/lib/utils'
 
-const navItems = ['Product', 'Technology', 'Company', 'Insights']
+const navItems = ['']
 
 export function SiteHeader() {
   const [open, setOpen] = useState(false)
 
   return (
     <header className="relative z-30 w-full">
+      <a
+        href="#explore"
+        className="group relative flex w-full items-center justify-center bg-white/10 px-5 py-2.5 text-center text-[13px] leading-snug text-white/90 backdrop-blur-md transition-colors hover:bg-white/[0.14] hover:text-white sm:px-8 sm:text-sm"
+      >
+        <span className="max-w-[min(100%,42rem)] text-balance">
+          Trade 24/7 with Amirah Financial fintech software.
+        </span>
+        <span className="absolute right-5 top-1/2 hidden -translate-y-1/2 items-center gap-0.5 text-sm font-medium text-white/90 transition-colors group-hover:text-white md:right-8 md:inline-flex">
+          Learn more
+          <ChevronRight className="size-3.5" aria-hidden="true" />
+        </span>
+      </a>
+
       <div className="mx-auto flex max-w-7xl items-center justify-between px-5 py-5 md:px-8">
         <a href="#" className="flex items-center gap-2.5" aria-label="Amirah Financial home">
           <Image
@@ -23,7 +36,7 @@ export function SiteHeader() {
             priority
           />
           <span className="text-xl font-semibold tracking-tight text-white">
-            Amirah
+            Amirah Financial
           </span>
         </a>
 

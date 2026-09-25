@@ -8,6 +8,7 @@ import { Foundation } from '@/components/foundation'
 import { Includes } from '@/components/includes'
 import { OnboardingTimeline } from '@/components/onboarding-timeline'
 import { Partners } from '@/components/partners'
+import { Message } from '@/components/message'
 import { Contact } from '@/components/contact'
 import { SiteFooter } from '@/components/site-footer'
 
@@ -24,6 +25,7 @@ export default function Page() {
       <Includes />
       <OnboardingTimeline />
       <Partners />
+      <Message />
       <Contact />
       <SiteFooter />
     </main>
