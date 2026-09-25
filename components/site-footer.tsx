@@ -19,7 +19,7 @@ export function SiteFooter() {
       </div>
 
       <div aria-hidden="true" className="overflow-hidden">
-        <p className="select-none whitespace-nowrap px-2 text-center font-semibold leading-[0.8] tracking-tight text-white/[0.06] [font-size:23vw]">
+        <p className="select-none whitespace-nowrap px-2 text-center font-semibold leading-[0.8] tracking-tight text-white [font-size:23vw]">
           AMIRAH
         </p>
       </div>

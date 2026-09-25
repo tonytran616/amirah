@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import { ArrowDown } from 'lucide-react'
 import { SiteHeader } from './site-header'
+import { LogoMarquee } from './logo-marquee'
 
 export function Hero() {
   return (
@@ -19,9 +20,9 @@ export function Hero() {
         <SiteHeader />
       </div>
 
-      <div className="relative z-20 flex flex-1 flex-col items-center justify-center px-6 pb-24 text-center">
+      <div className="relative z-20 flex flex-1 flex-col items-center justify-center px-6 pb-16 text-center">
         <h1 className="max-w-5xl text-balance text-4xl font-medium leading-[1.1] tracking-tight text-white drop-shadow-sm sm:text-5xl md:text-6xl lg:text-7xl">
-          Welcome to the future of finance and predictive markets
+          Welcome to the Future of Finance
         </h1>
 
         <a
@@ -31,6 +32,10 @@ export function Hero() {
           Scroll to explore
           <ArrowDown className="size-4 animate-bounce" aria-hidden="true" />
         </a>
+      </div>
+
+      <div className="relative z-20 mt-auto pb-4">
+        <LogoMarquee />
       </div>
     </section>
   )
