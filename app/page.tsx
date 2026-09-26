@@ -10,6 +10,7 @@ import { OnboardingTimeline } from '@/components/onboarding-timeline'
 import { Partners } from '@/components/partners'
 import { Message } from '@/components/message'
 import { Contact } from '@/components/contact'
+import { Subscribe } from '@/components/subscribe'
 import { SiteFooter } from '@/components/site-footer'
 
 export default function Page() {
@@ -27,6 +28,7 @@ export default function Page() {
       <Partners />
       <Message />
       <Contact />
+      <Subscribe />
       <SiteFooter />
     </main>
   )
