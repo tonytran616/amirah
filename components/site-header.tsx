@@ -1,6 +1,7 @@
 'use client'
 
 import Image from 'next/image'
+import { assetPath } from '@/lib/asset-path'
 import { useState } from 'react'
 import { ChevronRight, Menu, X } from 'lucide-react'
 import { cn } from '@/lib/utils'
@@ -28,7 +29,7 @@ export function SiteHeader() {
       <div className="mx-auto flex max-w-7xl items-center justify-between px-5 py-5 md:px-8">
         <a href="#" className="flex items-center gap-2.5" aria-label="Amirah Financial home">
           <Image
-            src="/logo.svg"
+            src={assetPath('/logo.svg')}
             alt="Amirah Financial"
             width={34}
             height={34}

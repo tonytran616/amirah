@@ -1,3 +1,5 @@
+import { assetPath } from '@/lib/asset-path'
+
 const logos = [
   { name: 'NVIDIA', src: '/logos/nvidia.svg' },
   { name: 'Google', src: '/logos/google.svg' },
@@ -14,7 +16,7 @@ function LogoItem({ name, src }: { name: string; src: string | null }) {
       {src ? (
         <>
           <img
-            src={src}
+            src={assetPath(src)}
             alt=""
             aria-hidden="true"
             className="h-6 w-6 object-contain opacity-90 md:h-7 md:w-7"

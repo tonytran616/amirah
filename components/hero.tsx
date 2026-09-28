@@ -1,3 +1,4 @@
+import { assetPath } from '@/lib/asset-path'
 import Image from 'next/image'
 import { ArrowDown } from 'lucide-react'
 import { SiteHeader } from './site-header'
@@ -7,7 +8,7 @@ export function Hero() {
   return (
     <section className="relative flex min-h-screen flex-col overflow-hidden">
       <Image
-        src="/hero-skyline.png"
+        src={assetPath('/hero-skyline.png')}
         alt=""
         fill
         priority

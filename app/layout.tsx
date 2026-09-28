@@ -1,3 +1,4 @@
+import { assetPath } from '@/lib/asset-path'
 import { Analytics } from '@vercel/analytics/next'
 import type { Metadata, Viewport } from 'next'
 import { Poppins } from 'next/font/google'
@@ -17,11 +18,11 @@ export const metadata: Metadata = {
   icons: {
     icon: [
       {
-        url: '/logo.svg',
+        url: assetPath('/logo.svg'),
         type: 'image/svg+xml',
       },
     ],
-    apple: '/logo.svg',
+    apple: assetPath('/logo.svg'),
   },
 }
 

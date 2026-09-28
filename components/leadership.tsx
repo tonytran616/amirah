@@ -1,3 +1,4 @@
+import { assetPath } from '@/lib/asset-path'
 import { Reveal } from './reveal'
 
 export function Leadership() {
@@ -16,7 +17,7 @@ export function Leadership() {
         <Reveal delay={80}>
           <div className="mx-auto mt-12 max-w-3xl overflow-hidden rounded-[24px] bg-white/5 md:max-w-4xl">
             <img
-              src="/leadership.jpg"
+              src={assetPath('/leadership.jpg')}
               alt="Amirah Financial leadership team"
               width={602}
               height={1306}

@@ -1,3 +1,4 @@
+import { assetPath } from '@/lib/asset-path'
 import { Reveal } from './reveal'
 
 const paragraphs = [
@@ -26,7 +27,7 @@ export function Performance() {
         <Reveal delay={80}>
           <div className="overflow-hidden rounded-2xl border border-neutral-200 bg-neutral-950 shadow-2xl">
             <img
-              src="/trading-chart.jpg"
+              src={assetPath('/trading-chart.jpg')}
               alt="Amirah trading terminal showing entry signals on an upward price chart"
               width={1024}
               height={572}
